@@ -20,7 +20,7 @@ Here’s how the attention mechanism works:
 - These scores indicate how well each element of the input sequence aligns with the current output position (t).
 - The alignment model uses a function (often implemented as a feedforward neural network) to compute these scores:
 
-  ![Formula-01](/images/01.png)
+  ![Formula-01](/images/00.png)
 
 
 
@@ -29,7 +29,7 @@ Here’s how the attention mechanism works:
 
 - The alignment scores are then transformed into weights (alphat,i​) using a softmax operation:
 
-  ![Formula-02](/images/02.png)
+  ![Formula-02](/images/01.png)
 
 - These weights represent the importance of each encoded input vector in contributing to the context vector.
 
@@ -40,7 +40,7 @@ Here’s how the attention mechanism works:
 - At each time step, a unique context vector (mathbfct​) is computed.
 - The context vector is a weighted sum of all the encoder hidden states:
 
-  ![Formula-03](/images/03.png)​
+  ![Formula-03](/images/02.png)​
 
 - Here, T represents the total number of time steps in the input sequence.
 
